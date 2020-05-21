@@ -5,7 +5,7 @@ Returns: a List of integers
 
 
 def product_of_all_other_numbers(arr):
-    outer_arr = []
+    return_arr = []
     index = 0  # current index
     subindex = 0  # index to multiply current index by by
 
@@ -15,10 +15,10 @@ def product_of_all_other_numbers(arr):
             if subindex != index:
                 product *= arr[subindex]
             subindex += 1
-        outer_arr.append(product)
+        return_arr.append(product)
         index += 1
         subindex = 0
-    return outer_arr
+    return return_arr
 
 
 print(product_of_all_other_numbers([1, 7, 3, 4]))
